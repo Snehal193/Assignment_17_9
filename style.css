@@ -113,13 +113,16 @@ to {transform:rotate(360deg);}
   display: inline-block;
   text-decoration: none;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   transition: 0.15s ease-in-out;
   position: relative;
   text-transform: uppercase;
-}
 
+}
+.menu li a:hover{
+  color: #0096FF;
+}
 .menu li a::after {
   content: "";
   position: absolute;
@@ -129,11 +132,12 @@ to {transform:rotate(360deg);}
   height: 1px;
   background-color: #0096FF;
   transition: 0.15s ease-in-out;
+  
 }
 .menu li a:hover:after {width: 100%;}
 .open-menu , .close-menu {
   position: absolute;
-  color: var(--color1);
+  background-color: #0096FF;
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
@@ -178,7 +182,9 @@ to {transform:rotate(360deg);}
   outline: none;
   color: white;
 }
-
+.main1 .input-field .btn:hover{
+  background-color: #374263;
+}
 .menu .search-container {
   float: right;
   margin-left: 68px;
@@ -455,7 +461,9 @@ nav .header2-content {
   cursor: pointer;
   outline: none;
 }
-
+.wrapperf .form .input-field .btn:hover{
+  background-color: #374263;
+}
 /*patients*/
 
 .owlcnt {
@@ -517,6 +525,7 @@ nav .header2-content {
   font-size: 26px;
   color: var(--links-clr);
   margin-top: 20px;
+  text-align: center;
 }
 
 .project-box h2 {
@@ -643,7 +652,7 @@ margin-left: 150px;
   font-size: 20px;
   color: var(--links-clr);
   margin-top: 20px;
-  text-align: left
+  text-align: center;
 }
 
 .project-box h2 {
@@ -712,6 +721,9 @@ margin-left: 150px;
   cursor: pointer;
   outline: none;
   color: white;
+}
+.team .input-field .btn:hover{
+  background-color: #91c2e5;
 }
 
 .team .input-field h4 {
@@ -1014,4 +1026,5 @@ margin-left: 150px;
     font-size: 40px;
     margin-bottom: 20px;
 }
+
 }
