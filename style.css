@@ -5,40 +5,47 @@
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
 }
+
 h1 {
   font-size: 6rem;
 }
-.bookc{
+
+.bookc {
   display: flex;
   flex-direction: column;
 }
-.mainhead{
+
+.mainhead {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.mainlogo{
+
+.mainlogo {
   width: 300px;
   height: 150px;
   background-color: rgb(245, 169, 182);
   padding: 10px;
-  margin:10px;
+  margin: 10px;
 }
-.endlogo{
+
+.endlogo {
   width: 200px;
   height: 50px;
   background-color: rgb(245, 169, 182);
   padding: 10px;
-  margin:10px;
+  margin: 10px;
 }
-.headcnt{
+
+.headcnt {
   padding: 10px;
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 .text-center {
   width: 100%;
   position: relative;
@@ -48,50 +55,65 @@ h1 {
 .spinner-border {
   display: block;
   position: fixed;
-  top: calc(50% - (58px / 2));  
+  top: calc(50% - (58px / 2));
   right: calc(50% - (58px / 2));
   color: red;
 }
 
 #backdrop {
-position:fixed;
-top:0;
-width: 100vw;
-height: 100vh;
-z-index: 999;
-background-color: rgb(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 #cover-spin {
-  position:fixed;
-  width:100%;
-  left:0;right:0;top:0;bottom:0;
-  background-color: rgba(0,0,0,0.1);
-  z-index:9999;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 9999;
   /* display:none; */
 }
 
 @-webkit-keyframes spin {
-from {-webkit-transform:rotate(0deg);}
-to {-webkit-transform:rotate(360deg);}
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-from {transform:rotate(0deg);}
-to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #cover-spin::after {
-  content:'';
-  display:block;
-  position:absolute;
-  left:48%;top:40%;
-  width:40px;height:40px;
-  border-style:solid;
-  border-color:#0096FF;
-  border-top-color:transparent;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: #0096FF;
+  border-top-color: transparent;
   border-width: 4px;
-  border-radius:50%;
+  border-radius: 50%;
   -webkit-animation: spin .8s linear infinite;
   animation: spin .8s linear infinite;
 }
@@ -106,9 +128,19 @@ to {transform:rotate(360deg);}
   padding: 20px 30px;
   background-color: #0096FF;
 }
-.logo img {width: 40px;}
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
+
+.logo img {
+  width: 40px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-left: 30px;
+}
+
 .menu li a {
   display: inline-block;
   text-decoration: none;
@@ -120,9 +152,11 @@ to {transform:rotate(360deg);}
   text-transform: uppercase;
 
 }
-.menu li a:hover{
+
+.menu li a:hover {
   color: #0096FF;
 }
+
 .menu li a::after {
   content: "";
   position: absolute;
@@ -132,26 +166,36 @@ to {transform:rotate(360deg);}
   height: 1px;
   background-color: #0096FF;
   transition: 0.15s ease-in-out;
-  
+
 }
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
+
+.menu li a:hover:after {
+  width: 100%;
+}
+
+.open-menu,
+.close-menu {
   position: absolute;
   background-color: #0096FF;
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
 }
+
 .open-menu {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
 }
+
 .close-menu {
   top: 20px;
   right: 20px;
 }
-#check {display: none;}
+
+#check {
+  display: none;
+}
 
 .main {
   display: flex;
@@ -163,12 +207,14 @@ to {transform:rotate(360deg);}
   background-position: top;
   height: 450px;
 }
+
 .main1 .input-field {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 20px;
 }
+
 .main1 .input-field .btn {
   background-color: #0096FF;
   width: 150px;
@@ -182,9 +228,11 @@ to {transform:rotate(360deg);}
   outline: none;
   color: white;
 }
-.main1 .input-field .btn:hover{
+
+.main1 .input-field .btn:hover {
   background-color: #374263;
 }
+
 .menu .search-container {
   float: right;
   margin-left: 68px;
@@ -197,7 +245,7 @@ to {transform:rotate(360deg);}
   margin-top: 8px;
   font-size: 17px;
   border: none;
-  background-color: #374263;  
+  background-color: #374263;
 }
 
 .menu .search-container button {
@@ -365,7 +413,7 @@ nav .header2-content {
 }
 
 .info .content1 h1 {
-  font-weight: bolder;
+  font-weight: bold;
   padding: 10px;
   font-size: 40px;
 }
@@ -461,9 +509,11 @@ nav .header2-content {
   cursor: pointer;
   outline: none;
 }
-.wrapperf .form .input-field .btn:hover{
+
+.wrapperf .form .input-field .btn:hover {
   background-color: #374263;
 }
+
 /*patients*/
 
 .owlcnt {
@@ -572,9 +622,10 @@ nav .header2-content {
   background-color: #b5e2ff;
 }
 
-.owlcnt2{
-margin-left: 150px;
+.owlcnt2 {
+  margin-left: 150px;
 }
+
 .content2 {
   margin: 80px;
 }
@@ -630,6 +681,7 @@ margin-left: 150px;
   z-index: 1;
   /* max-width: 400px; */
 }
+
 /*
 .infopatient{
   display: flex;
@@ -706,9 +758,11 @@ margin-left: 150px;
   color: white;
   font-size: 50px;
 }
-.team .input-field{
+
+.team .input-field {
   display: flex;
 }
+
 .team .input-field .btn {
   background-color: #374263;
   width: 150px;
@@ -722,7 +776,8 @@ margin-left: 150px;
   outline: none;
   color: white;
 }
-.team .input-field .btn:hover{
+
+.team .input-field .btn:hover {
   background-color: #91c2e5;
 }
 
@@ -746,8 +801,7 @@ margin-left: 150px;
   align-items: center;
   justify-content: center;
   position: relative;
-  gap: 20px;
-  padding:20px;
+  padding: 20px;
 }
 
 .dash {
@@ -944,13 +998,27 @@ margin-left: 150px;
     z-index: 100;
     background-color: #0096FF;
     transition: all 0.2s ease-in-out;
-}
-.menu li {margin-top: 40px;}
-.menu li a {padding: 10px;}
-.open-menu , .close-menu {display: block;}
-#check:checked ~ .menu {right: 0;}
-.menu .search-container {
-   margin-left: 97px;
+  }
+
+  .menu li {
+    margin-top: 40px;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+
+  .menu .search-container {
+    margin-left: 97px;
     margin-top: 29px;
   }
 
@@ -960,40 +1028,49 @@ margin-left: 150px;
     justify-content: center;
     align-items: center;
   }
-  .bigContainer{
+
+  .bigContainer {
     flex-direction: row;
   }
-  .subconatiner1{
+
+  .subconatiner1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
+
   .info1 h1 {
     text-align: center;
   }
+
   .info {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .info .content1 h1{
+
+  .info .content1 h1 {
     text-align: center;
   }
+
   .info1 p {
     width: 100%;
     text-align: left;
     padding: 20px;
   }
-  .info .content1 p{
+
+  .info .content1 p {
     width: 100%;
     text-align: left;
   }
+
   .line {
     height: 10px;
     width: 100%;
     padding: 30px;
   }
+
   .lastcard {
     position: relative;
     right: 89px;
@@ -1002,29 +1079,55 @@ margin-left: 150px;
     margin-left: 290px;
     margin-top: 30px;
   }
+
   .team .input-field h4 {
     margin-top: 30px;
     margin-left: 0px;
     font-size: 30px;
   }
-  .header-links li a{
+
+  .header-links li a {
     font-size: 15px;
   }
-  .team .input-field{
-   flex-direction: column;
+
+  .team .input-field {
+    flex-direction: column;
   }
-  .owlcnt2{
+
+  .owlcnt2 {
     margin-left: 0px;
-    }
-    .team .input-field h4 {
-      margin-top: -72px;
-      margin-left: -34px;
-      font-size: 20px;
   }
+
+  .team .input-field h4 {
+    margin-top: -72px;
+    margin-left: -34px;
+    font-size: 20px;
+  }
+
   .team h1 {
     color: white;
     font-size: 40px;
     margin-bottom: 20px;
-}
+  }
 
+  .menu li a {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .info .content1 h1 {
+    font-size: 30px;
+  }
+
+  .info .content1 p {
+    font-size: 10px;
+  }
+
+  .info .content1 h1 {
+    font-size: 30px;
+  }
+
+  .info1 p {
+    font-size: 10px;
+  }
 }
