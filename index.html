@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Hermanos Assignment </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!------page loader------->
+    <div id="backdrop">
+        <div id="cover-spin"></div>
+    </div>
+    <header class="mainhead">
+        <div class="endlogo">
+            <p>logo</p>
+        </div>
+        <div class="headcnt">
+            <svg width="40px" height="40px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-420.000000, -2119.000000)" fill="#000000">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path
+                                d="M378.083123,1964.99998 C378.083123,1962.79398 376.251842,1960.99998 374,1960.99998 C371.748158,1960.99998 369.916877,1962.79398 369.916877,1964.99998 C369.916877,1967.20598 371.748158,1968.99998 374,1968.99998 C376.251842,1968.99998 378.083123,1967.20598 378.083123,1964.99998 M381.945758,1978.99998 L380.124685,1978.99998 C379.561214,1978.99998 379.103904,1978.55198 379.103904,1977.99998 C379.103904,1977.44798 379.561214,1976.99998 380.124685,1976.99998 L380.5626,1976.99998 C381.26898,1976.99998 381.790599,1976.30298 381.523154,1975.66198 C380.286989,1972.69798 377.383888,1970.99998 374,1970.99998 C370.616112,1970.99998 367.713011,1972.69798 366.476846,1975.66198 C366.209401,1976.30298 366.73102,1976.99998 367.4374,1976.99998 L367.875315,1976.99998 C368.438786,1976.99998 368.896096,1977.44798 368.896096,1977.99998 C368.896096,1978.55198 368.438786,1978.99998 367.875315,1978.99998 L366.054242,1978.99998 C364.778266,1978.99998 363.773818,1977.85698 364.044325,1976.63598 C364.787453,1973.27698 367.107688,1970.79798 370.163906,1969.67298 C368.769519,1968.57398 367.875315,1966.88998 367.875315,1964.99998 C367.875315,1961.44898 371.023403,1958.61898 374.733941,1959.04198 C377.422678,1959.34798 379.650022,1961.44698 380.05323,1964.06998 C380.400296,1966.33098 379.456073,1968.39598 377.836094,1969.67298 C380.892312,1970.79798 383.212547,1973.27698 383.955675,1976.63598 C384.226182,1977.85698 383.221734,1978.99998 381.945758,1978.99998 M377.185857,1974.46398 C377.584982,1974.85498 377.584982,1975.48798 377.185857,1975.87898 L374,1978.99998 L371.834924,1976.87898 C371.435799,1976.48798 371.435799,1975.85498 371.834924,1975.46398 L371.834924,1975.46398 C372.233028,1975.07398 372.879183,1975.07398 373.278308,1975.46398 L374,1976.17198 L375.742473,1974.46398 C376.141598,1974.07398 376.787752,1974.07398 377.185857,1974.46398"
+                                id="profile_round-[#1345]">
+
+                            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+
+            <div class="bookc">
+                <p>Lorem Epsum</p>
+                <h3>Book Consultation</h3>
+            </div>
+        </div>
+
+
+        <div class="headcnt">
+            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5.13641 12.764L8.15456 9.08664C8.46255 8.69065 8.61655 8.49264 8.69726 8.27058C8.76867 8.07409 8.79821 7.86484 8.784 7.65625C8.76793 7.42053 8.67477 7.18763 8.48846 6.72184L7.77776 4.9451C7.50204 4.25579 7.36417 3.91113 7.12635 3.68522C6.91678 3.48615 6.65417 3.35188 6.37009 3.29854C6.0477 3.238 5.68758 3.32804 4.96733 3.5081L3 4C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3121 20.7617 17.952 20.7012 17.6296C20.6478 17.3456 20.5136 17.0829 20.3145 16.8734C20.0886 16.6355 19.7439 16.4977 19.0546 16.222L17.4691 15.5877C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4001C15.4877 15.512 15.2854 15.7143 14.8807 16.119L11.8274 19.1733M12.9997 7C13.9765 7.19057 14.8741 7.66826 15.5778 8.37194C16.2815 9.07561 16.7592 9.97326 16.9497 10.95M12.9997 3C15.029 3.22544 16.9213 4.13417 18.366 5.57701C19.8106 7.01984 20.7217 8.91101 20.9497 10.94"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <div class="bookc">
+                <p>Call us on</p>
+                <h3>+912548967845</h3>
+            </div>
+        </div>
+
+        <div class="headcnt">
+            <svg height="40px" width="40px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: #000000;
+                    }
+                </style>
+                <g>
+                    <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345
+               c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345
+               C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203
+               c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958
+               c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064
+               c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571
+               c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637
+               L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136
+               C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435
+               C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959
+               l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959
+               C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8
+               V385.92z" />
+                </g>
+            </svg>
+
+            <div class="bookc">
+                <p>Email us on</p>
+                <h3>xyzzz@gmail.com</h3>
+            </div>
+        </div>
+    </header>
+    <header>
+        <header>
+            <nav>
+                <ul class='nav-bar'>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Treatments</a></li>
+                        <li><a href="">Destinations</a></li>
+                        <li><a href="">Hopitals</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Request a quote</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                
+                            </form>
+                        </div>
+                    </span>
+
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+
+            <div class="main">
+                <div class="main1">
+
+                    <div class="main2">
+                        <h3>Home</h3>
+                        <p>></p>
+                        <h3>Treatments</h3>
+                        <p>></p>
+                        <h3>Orthopaedics</h3>
+                        <p>></p>
+                        <h3>Knee replacement</h3>
+                    </div>
+
+
+                    <div class="main3">
+                        <h1>Total Knee replacement</h1>
+                    </div>
+                    <div class="main4">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</h5>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" class="btn" value="Enquire Now">
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <nav>
+            <div class="header2-content">
+                <ul class="header2-links">
+                    <li><a href="#Overview">Overview</a></li>
+                    <li><a href="#Eligibility">Eligibility</a></li>
+                    <li><a href="#about-treatment">about treatment</a></li>
+                    <li><a href="#post-treatment">post-treatment</a></li>
+                    <li><a href="#recoverytips">recovery tips</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="bigContainer">
+            <div class="subconatiner">
+                <div class="info1" id="Overview">
+                    <div class="content1">
+                        <h1> Lorem ipsum Overview</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Maxime mollitia,
+                            molestiae quas ve
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                        </p>
+                    </div>
+                    <div class="img1" loading="lazy">
+                        <img width="700" src="image2.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <hr style="height:2px; width:100%; border-width:0;  color:	#ffffff; background-color:	#cececf">
+        <!-------second container-->
+        <section class="bigContainer">
+            <div class="subconatiner1">
+                <div class="info">
+
+                    <!---content1-->
+                    <div class="content1" id="Eligibility">
+                        <h1> Lorem ipsum Eligibility</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Maxime mollitia,
+                            molestiae quas ve
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                        </p>
+                        <div class="line">
+                            <hr
+                                style="height:2px; width:100%; border-width:0; color:	#D3D3D3; background-color:	#D3D3D3">
+                        </div>
+                    </div>
+
+                    <!---content2-->
+                    <div class="content1" id="about-treatment">
+                        <h1> about treatment dolor</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Maxime mollitia,
+                            molestiae quas ve
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                        </p>
+                        <div class="line">
+                            <hr
+                                style="height:2px; width:100%; border-width:0; color:	#D3D3D3; background-color:	#D3D3D3">
+                        </div>
+                    </div>
+                    <!---content3-->
+                    <div class="content1" id="post-treatment">
+                        <h1>post- treatment</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Maxime mollitia,
+                            molestiae quas ve
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                        </p>
+                        <div class="line">
+                            <hr
+                                style="height:2px; width:100%; border-width:0; color:	#D3D3D3; background-color:	#D3D3D3">
+                        </div>
+                    </div>
+
+                    <!---content4-->
+                    <div class="content1" id="recoverytips">
+                        <h1>recovery tips</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Maxime mollitia,
+                            molestiae quas ve
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                        </p>
+                        <div class="line">
+                            <hr
+                                style="height:2px; width:100%; border-width:0; color:	#D3D3D3; background-color:	#D3D3D3">
+                        </div>
+                    </div>
+                    <!---content5-->
+                    <div class="content1" id="FAQs">
+                        <h1>FAQs</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Maxime mollitia,
+                            molestiae quas ve
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Maxime mollitia,
+                        </p>
+                        <div class="line">
+                            <hr
+                                style="height:2px; width:100%; border-width:0; color:	#D3D3D3; background-color:	#D3D3D3">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapperf">
+                    <div class="title">
+                        Need Help?
+                    </div>
+                    <div class="form">
+                        <div class="input-field">
+                            <label>first name</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="input-field">
+                            <label>last name</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="input-field">
+                            <label>email adress</label>
+                            <input type="email" class="input">
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="btn" value="Register">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!------OWL carousel1= doctors-->
+        <section>
+            <div class="owlcnt">
+                <div class="owlcnt1">
+                    <h3>Doctors</h3>
+                    <h1>Top Orthopaedic Doctors</h1>
+                </div>
+                <div class="owlcnt2">
+                    <div class="owl-carousel owl-theme">
+                        <div class="project-box">
+                            <div class="dummy">
+
+                            </div>
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="dummy">
+
+                            </div>
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <div class="dummy">
+
+                            </div>
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <div class="dummy">
+
+                            </div>
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <div class="dummy">
+
+                            </div>
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <div class="dummy">
+
+                            </div>
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <div class="dummy">
+
+                            </div>
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------OWL carousel2= hospitals-->
+        <section>
+            <div class="hospital">
+
+                <h3>Doctors</h3>
+                <h1>Recomended Hopitals</h1>
+
+                <div class="owlcnt2">
+                    <div class="owl-carousel owl-theme">
+                        <div class="project-box">
+                            <img id="image1" class="image" loading="lazy" src="image1.png">
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div class="project-box">
+                            <img id="image2" class="image" loading="lazy" src="image1.png">
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <img id="image3" class="image" loading="lazy" src="image1.png">
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <img id="image4" class="image" loading="lazy" src="image1.png">
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <img id="image5" class="image" loading="lazy" src="image1.png">
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <img id="image6" class="image" loading="lazy" src="image1.png">
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="project-box">
+                            <img id="image7" class="image" loading="lazy" src="image1.png">
+                            <h2>Lorem Epsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hosplink">
+                    <p style="text-align: center; font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.</p>
+                    <a href="https://thane.nic.in/public-utility-category/hospitals/">Explore hospitals</a>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="team">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                <div class="input-field">
+                    <input type="submit" class="btn" value="Register">
+                    <h4>+91897566327</h4>
+                </div>
+            </div>
+
+        </section>
+        <section class="final">
+            <div class="mainfoot">
+                <div class="footer-content">
+                    <h3>Important links</h3>
+                    <ul class="header-links">
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Home</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">About Us</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Treatments</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Destinations</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Hospitals</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">FAQs</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Blog</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Request A Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Important links</h3>
+                    <ul class="header-links">
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Home</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">About Us</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Treatments</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Destinations</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Hospitals</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">FAQs</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Blog</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Request A Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+
+                    <h3>Important links</h3>
+                    <ul class="header-links">
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Home</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">About Us</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Treatments</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Destinations</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Hospitals</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">FAQs</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Blog</a></li>
+                        <div class="dash">
+                            <p>-</p>
+                        </div>
+                        <li><a href="#">Request Quote</a></li>
+                    </ul>
+                </div>
+
+                <div class="lastcard">
+                    <div class="card-box">
+                        <div class="logo"></div>
+                        <h2>Lorem Epsum</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr style="height:3px; width:100%; border-width:0;  color:	#ffffff; background-color:	#807e9c">
+
+            <div class="endfoot">
+                <div class="mainlogo">
+                    <p>logo</p>
+                </div>
+
+                <div class="middle">
+                    <h2>About Lorem Epsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint
+                        commodi repudiandae consequuntur voluptatum Lorem ipsum dolor sit amet commodi repudiandae
+                        consequuntur voluptatum Lorem ipsum dolor</p>
+                </div>
+                <div class="mainsocial">
+                    <h2> Follow Us On</h2>
+                    <div class="socials">
+
+                        <div class="facebook">
+                            <svg width="40px" height="40px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M715.637 960h171.897C920.348 960 960 932.759 960 898.909V125.091C960 91.243 920.348 64 887.534 64H113.716C77.004 64 64 96.892 64 125.091v773.818C64 927.109 77.004 960 113.716 960h439.012V634.182H410.181c-11.257 0-20.363-9.106-20.363-20.363V491.637c0-11.257 9.106-20.365 20.363-20.365h142.546V328.728c0-99.354 88.056-183.272 192.261-183.272h113.193c11.257 0 20.365 9.106 20.365 20.363V288c0 11.258-9.108 20.365-20.365 20.365h-72.465c-34.444 0-70.079 19.052-70.079 50.908v112h131.17a20.27 20.27 0 0 1 16.507 8.472c3.856 5.291 4.891 12.133 2.823 18.337l-40.728 122.181a20.403 20.403 0 0 1-19.33 13.919h-90.442V960z"
+                                    fill="#2577FF" />
+                                <path
+                                    d="M807.708 451.723h-92.071v19.549h112.288c-0.161-3.938-1.326-7.809-3.711-11.078a20.263 20.263 0 0 0-16.506-8.471zM513.629 940.451H75.445C83.3 951.952 95.599 960 113.716 960h439.012V634.183H513.63v306.268zM839.283 145.456c-0.451-10.855-9.231-19.549-20.198-19.549H705.89c-104.205 0-192.261 83.919-192.261 183.272v142.544H371.083c-11.257 0-20.363 9.108-20.363 20.365v122.181c0 11.258 9.107 20.364 20.363 20.364h18.899c-0.012-0.286-0.164-0.527-0.164-0.815V491.637c0-11.257 9.106-20.365 20.363-20.365h142.546V328.728c0-99.353 88.056-183.272 192.261-183.272h94.295z"
+                                    fill="" />
+                                <path
+                                    d="M900.123 65.251c12.221 10.76 20.778 24.748 20.778 40.29V879.36c0 33.85-39.651 61.091-72.467 61.091H715.637V960h171.896C920.348 960 960 932.759 960 898.909V125.091c0-29.6-30.322-54.141-59.877-59.84z"
+                                    fill="" />
+                            </svg>
+
+                        </div>
+
+                        <div class="twitter">
+
+                            <svg width="40px" height="40px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M362.41 879.648c-95.417 0-192.465-27.316-288.485-81.263-8.064-4.527-11.83-14.15-8.98-22.977 2.855-8.788 11.185-14.191 20.773-13.355 72.17 8.408 148.407-8.75 205.511-42.302-66.043-15.525-119.417-58.397-147.571-120.676a19.454 19.454 0 0 1 3.119-20.884c4.983-5.746 13.011-8.03 20.317-5.781a142.417 142.417 0 0 0 25.033 5.364c-50.106-29.903-103.784-87.197-103.784-172.987 0-7.531 4.335-14.379 11.11-17.573a19.353 19.353 0 0 1 20.654 2.47c6.241 5.099 12.938 9.362 19.821 12.708-14.339-19.44-26.781-43.562-33.857-70.8-12.972-49.989-5.478-100.585 21.683-146.351 3.233-5.516 9.018-9.054 15.372-9.514 6.238-0.681 12.552 2.249 16.584 7.27 57.332 71.633 159.212 158.183 323.066 174.01-3.003-51.854 12.556-136.841 84.154-178.653 87.462-51.13 173.248-44.434 245.606 18.983 32.263-7.187 83.202-29.291 93.741-36.673a19.516 19.516 0 0 1 22.33-0.04c6.696 4.683 9.779 13.052 7.686 20.963-4.87 18.375-15.864 38.765-29.6 57.027 10.881-3.233 20.012-6.505 24.882-9.014 7.837-3.997 17.308-2.322 23.318 4.146 5.937 6.505 6.775 16.131 2.097 23.587-22.942 36.218-59.959 69.963-84.727 88.222 9.931 121.587-39.26 255.425-132.998 360.459-99.976 111.966-233.776 173.634-376.781 173.634h-0.074z"
+                                    fill="#2577FF" />
+                                <path
+                                    d="M773.705 209.378c11.484-2.559 25.333-7.039 38.885-12.041-50.557-43.083-107.542-58.134-158.074-50.884 36.738 5.548 86.781 34.522 119.189 62.925zM484.047 365.248c-0.152-2.646-0.222-5.432-0.275-8.24-133.027-2.397-266.805-97.597-324.061-174.009-3.863-5.155-10.347-7.952-16.584-7.271-6.354 0.46-12.138 3.998-15.371 9.514-2.83 4.767-5.318 9.616-7.72 14.483 86.352 148.04 212.727 150.909 364.011 165.523zM954.896 233.745c-6.012-6.466-15.483-8.141-23.32-4.144-4.87 2.509-14.002 5.781-24.882 9.014 13.736-18.262 24.73-38.652 29.6-57.027a19.502 19.502 0 0 0-7.686-20.963 19.52 19.52 0 0 0-22.33 0.039c-3.711 2.6-12.577 7.061-23.723 12.014 0.607 2.903 0.772 5.914-0.021 8.911-4.87 18.375-15.864 38.765-29.599 57.027 10.881-3.233 20.012-6.505 24.882-9.014 7.837-3.997 17.308-2.322 23.32 4.144 5.936 6.507 6.774 16.133 2.095 23.59-22.942 36.216-59.959 69.961-84.726 88.22 9.929 121.587-39.261 255.425-132.997 360.461C592.268 810.433 469.603 871.055 337.5 878.76c8.309 0.411 16.624 0.888 24.91 0.888h0.073c143.006 0 276.806-61.669 376.784-173.633 93.736-105.035 142.927-238.874 132.997-360.461 24.767-18.259 61.784-52.004 84.726-88.22 4.68-7.457 3.842-17.083-2.094-23.589z"
+                                    fill="" />
+                            </svg>
+                        </div>
+                        <div class="insta">
+                            <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)" />
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)" />
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)" />
+                                <path
+                                    d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                                    fill="white" />
+                                <defs>
+                                    <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                                        <stop stop-color="#B13589" />
+                                        <stop offset="0.79309" stop-color="#C62F94" />
+                                        <stop offset="1" stop-color="#8A3AC8" />
+                                    </radialGradient>
+                                    <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                                        <stop stop-color="#E0E8B7" />
+                                        <stop offset="0.444662" stop-color="#FB8A2E" />
+                                        <stop offset="0.71474" stop-color="#E2425C" />
+                                        <stop offset="1" stop-color="#E2425C" stop-opacity="0" />
+                                    </radialGradient>
+                                    <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                                        <stop offset="0.156701" stop-color="#406ADC" />
+                                        <stop offset="0.467799" stop-color="#6A45BE" />
+                                        <stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="youtube">
+                            <svg width="40px" height="40px" viewBox="0 -7 48 48" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Color-" transform="translate(-200.000000, -368.000000)" fill="#CE1312">
+                                        <path
+                                            d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z"
+                                            id="Youtube">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="endsocial">
+                        <h3>Customer Service</h3>
+                        <p>+919865475689</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="copywrite">
+
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <h5>Lorem ipsum dolor</h5>
+                <h5>Lorem ipsum dolor</h5>
+            </div>
+        </section>
+
+        <!----------Scripts----------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    400: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+            /*backdrop*/
+            window.onload = () => {
+                document.getElementById("backdrop").style.display = 'none';
+            }
+
+        </script>
+</body>
+
+</html>
