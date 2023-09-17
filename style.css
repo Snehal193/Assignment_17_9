@@ -1120,7 +1120,7 @@ nav .header2-content {
   }
 
   .info .content1 p {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .info .content1 h1 {
@@ -1128,6 +1128,12 @@ nav .header2-content {
   }
 
   .info1 p {
-    font-size: 10px;
+    font-size: 20px;
+  }
+  .header2-links li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 400;
   }
 }
