@@ -5,6 +5,9 @@
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
 }
+h1 {
+  font-size: 6rem;
+}
 .bookc{
   display: flex;
   flex-direction: column;
@@ -96,7 +99,7 @@ to {transform:rotate(360deg);}
 .nav-bar {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   list-style: none;
   position: relative;
@@ -110,7 +113,7 @@ to {transform:rotate(360deg);}
   display: inline-block;
   text-decoration: none;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   transition: 0.15s ease-in-out;
   position: relative;
@@ -178,7 +181,7 @@ to {transform:rotate(360deg);}
 
 .menu .search-container {
   float: right;
-  margin-left: 668px;
+  margin-left: 68px;
   margin-top: -15px;
   border-radius: 2px solid gray;
 }
@@ -236,7 +239,7 @@ to {transform:rotate(360deg);}
 .main3 h1 {
   color: white;
   margin: 20px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .main4 h5 {
@@ -485,6 +488,7 @@ nav .header2-content {
   padding: 10px;
   margin: 10px;
   text-align: center;
+  font-size: 40px;
 }
 
 /*owl carousal*/
@@ -702,7 +706,7 @@ margin-left: 150px;
   border: 0;
   padding: 10px 5px;
   margin-top: 30px;
-  margin-right: 30px;
+  margin-right: 0px;
   font-size: 15px;
   border-radius: 3px;
   cursor: pointer;
@@ -792,7 +796,7 @@ margin-left: 150px;
 
 .lastcard {
   position: relative;
-  right: -156px;
+  right: -76px;
   top: -117px;
   width: 30%;
 }
